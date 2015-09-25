@@ -1,0 +1,84 @@
+git init 
+Initialized empty Git repository in /Users/calamida/ferrari/.git/
+
+# Per creare un repository. Nella directory .git c'e' il repository. Non cancellare questa dir!
+# Mentre il codice si trova nella dir /Users/calamida/ferrari
+
+git config user.name "Annalisa Calamida" 
+git config user.email "acalamid@gmail.com"
+
+# Per settare lo username e l'indirizzo email del repository
+
+# Creo un file, ferrarri.txt, nella directory principale del repository, /Users/calamida/ferrari/
+
+git config --global color.ui true
+
+# Per visualizzare le cose con i colori nella shell
+
+git status
+
+# Per vedere lo stato del repository
+
+git add name_file 
+
+# Per aggiungere i files al repository
+
+git commit 
+
+# Per salvare i files aggiunti al repository
+
+git commit -m "Initial commit; started my fiels notes on ferrari"
+
+# Lo stesso comando ma aggiungendo un commento per spiegare quello che abbiamo fatto
+
+git diff 
+
+# Mostra i cambiamenti che sono stati fatti a tutti i file che sono nella dir del repository (oppure sepcifica il nome del file per il quale si vuole visualizzare la differenza)
+
+# Dopo aver cambiato i files, prima di fare il commit, bisogna di nuovo aggiungerli al repository con 
+
+git add name_file  
+
+# e dopo ancora:
+
+git commit -m "Added another observation"
+
+git diff --cached ferrari.txt 
+
+# Visualizza le differenze con la precedente versione anche se ho gia' aggiunto il file al repository (ma non ancora committed)
+
+git reset HEAD ferrari.txt
+
+# Con questo comando cancello i cambiamenti non dal file ma dal repository (cosi' dopo devo rifare git add per ri-aggiungerli, e poi git commit...ecc)
+
+git add --patch ferrari.txt 
+
+# Per aggiungere o togliere le modifiche che sono state aggiunte al repository (git add)
+
+git log
+git log --patch
+# Storia di tutti i commit che abbiamo fatto. Con --patch vedi i cambiamenti fatti
+
+gitk -> Versione GUI
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+ 
+
+
+
